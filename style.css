@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    font-size:1.2em;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    font-size: 16px;
+}
+
+form.search input[type=text]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 100%;
+    background: #f1f1f1;
+  }
+  
+  #searchbutton{
+    float: left;
+      width: 100%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+  }
+
+.banner {
+    height: 400px;
+    width: 100%;
+    max-height: 50%;
+    max-width: 100%;
+    min-height: 20%;
+    min-width: 30%;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position-y: 23%;
+    
+  }
+  
+
+.panel{
+    background-color: aliceblue;
+    padding: 5px 15px;   
+}
+
+.panel-heading {
+    background-color: lightblue;
+    border-style: solid;
+    border: 5px;
+    border-color: black;
+    text-align: center;
+    font-size:24px;
+}
+
+.panel-footer{
+    background-color: lightblue;
+}
+
+.panel-footer button{
+    width: 49%;
+}
+
+.panel-footer button a {
+    color: black;
+}
+
+.panel-body{
+    font-size: 16px;
+}
+
+.modal-content{
+    text-align: center;
+}
+
+.favouriteSlide{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.printSign{
+    position: fixed;
+    width: 10%;
+    left: 85%;
+    bottom: 5%
+}
