@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+                crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+                crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="style/style.css">
+
+
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                        <div class="navbar-header">
+                                <a class="navbar-brand" href="index.html">Travel Ottawa</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                                <li class="active">
+                                        <a href=#>Home</a>
+                                </li>
+                                <li>
+                                        <a href="favourites.html">Favourites</a>
+                                </li>
+                                <li>
+                                        <a href="attractions.html">Attractions</a>
+                                </li>
+                                <li>
+                                        <a href="restaurants.html">Restaurants</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+</head>
+
+
+
+<body>
+        <div class="jumbotron banner">
+                <div style="text-align: center; width: 20%; background-color: black; color: white;">
+                        <h1 style="font-size: 100px">Travel Ottawa</h1>
+                        <p>We look forward to your visit!</p>
+                </div>
+
+        </div>
+
+
+        <div class="container">
+                <div class="row" style="margin-left: 10px">
+                        <h2>Featured Attractions</h2>
+                </div>
+                <div class="row">
+                        <div class="col-md-4 panel">
+                                <div class="panel-heading"> Parliament Hill</div>
+                                <img src="img/phill.jpg" alt="" width="100%" height="200px">
+                                <div class="panel-body">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quis rerum incidunt
+                                                delectus, reiciendis explicabo officiis vero ad a amet.</p>
+                                        <h5>
+                                                <strong> Address : 464 Rideau St, Ottawa, ON K1N 5Z3</strong>
+                                        </h5>
+                                        <h5>
+                                                <strong> Phone: 613 212 2121</strong>
+                                        </h5>
+
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                Operating Hours
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Monday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Tuesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Wednesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Thursday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Friday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Saturday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Sunday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+
+                                </div>
+                                <dir class="panel-footer">
+                                        <button type="button" class="btn btn-info">
+                                                <a href="https://visit.parl.ca/index-e.html">Website</a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#addFavModal">
+                                                Add to Favourites
+                                        </button>
+
+                                </dir>
+                        </div>
+                        <div class="col-md-4 panel">
+                                <div class="panel-heading">Museum of Nature</div>
+                                <img src="img/mnature.jpg" alt="" width="100%" height="200px">
+                                <div class="panel-body">
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt cupiditate
+                                                repellendus beatae modi odit expedita! Ratione voluptates nesciunt unde!</p>
+                                        <h5>
+                                                <strong> Address : 464 Rideau St, Ottawa, ON K1N 5Z3</strong>
+                                        </h5>
+                                        <h5>
+                                                <strong> Phone: 613 212 2121</strong>
+                                        </h5>
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                Operating Hours
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Monday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Tuesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Wednesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Thursday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Friday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Saturday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Sunday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+
+                                <dir class="panel-footer">
+
+                                        <button type="button" class="btn btn-info">
+                                                <a href="http://www.nature.ca/en/home">Website</a>
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#removeFavModal">
+                                                Added to Favourites
+                                        </button>
+                                </dir>
+                        </div>
+                        <div class="col-md-4 panel">
+                                <div class="panel-heading">Museum of History</div>
+                                <img src="img/mciv.jpg" alt="" width="100%" height="200px">
+                                <div class="panel-body">
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore quos voluptates
+                                                sit corporis repellat veritatis itaque maiores excepturi perspiciatis?</p>
+                                        <h5>
+                                                <strong> Address : 464 Rideau St, Ottawa, ON K1N 5Z3</strong>
+                                        </h5>
+                                        <h5>
+                                                <strong> Phone: 613 212 2121</strong>
+                                        </h5>
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                Operating Hours
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Monday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Tuesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Wednesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Thursday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Friday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Saturday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Sunday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                                <dir class="panel-footer">
+                                        <button type="button" class="btn btn-info">
+                                                <a href="https://www.historymuseum.ca/">Website</a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#addFavModal">
+                                                Add to Favourites
+                                        </button>
+                                </dir>
+                        </div>
+                </div>
+        </div>
+
+
+
+
+        <div class="container">
+                <div class="row" style="margin-left: 10px">
+                        <h2>Featured Restaurants</h2>
+                </div>
+                <div class="row">
+                        <div class="col-md-4 panel">
+                                <div class="panel-heading">Shawarma Palace</div>
+                                <img src="img/shawarmapalace.jpg" alt="" width="100%" height="200px">
+                                <div class="panel-body">
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus facilis
+                                                perspiciatis quam quod esse sapiente hic neque ex qui.</p>
+                                        <h5>
+                                                <strong> Address : 464 Rideau St, Ottawa, ON K1N 5Z3</strong>
+                                        </h5>
+                                        <h5>
+                                                <strong> Phone: 613 212 2121</strong>
+                                        </h5>
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                Operating Hours
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Monday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Tuesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Wednesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Thursday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Friday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Saturday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Sunday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                                <dir class="panel-footer">
+
+                                        <button type="button" class="btn btn-info">
+                                                <a href="http://shawarmapalace.ca/">Website</a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#addFavModal">
+                                                Add to Favourites
+                                        </button>
+                                </dir>
+                        </div>
+                        <div class="col-md-4 panel">
+                                <div class="panel-heading">Signatures Restaurant</div>
+                                <img src="img/signatures.jpg" alt="" width="100%" height="200px">
+                                <div class="panel-body">
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officiis dicta vel
+                                                consequuntur unde reiciendis corporis? Reiciendis in architecto eveniet.</p>
+                                        <h5>
+                                                <strong> Address : 464 Rideau St, Ottawa, ON K1N 5Z3</strong>
+                                        </h5>
+                                        <h5>
+                                                <strong> Phone: 613 212 2121</strong>
+                                        </h5>
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                Operating Hours
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Monday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Tuesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Wednesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Thursday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Friday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Saturday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Sunday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                                <dir class="panel-footer">
+
+                                        <button type="button" class="btn btn-info">
+                                                <a href="http://www.signaturesrestaurant.com/">Website</a>
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#removeFavModal">
+                                                Added to Favourites
+                                        </button>
+                                </dir>
+                        </div>
+                        <div class="col-md-4 panel">
+                                <div class="panel-heading">atelier</div>
+                                <img src="img/atelier.jpg" alt="" width="100%" height="200px">
+                                <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia, exercitationem
+                                                culpa fugit nobis rem necessitatibus asperiores soluta error deserunt!</p>
+                                        <h5>
+                                                <strong> Address : 464 Rideau St, Ottawa, ON K1N 5Z3</strong>
+                                        </h5>
+                                        <h5>
+                                                <strong> Phone: 613 212 2121</strong>
+                                        </h5>
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                Operating Hours
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td>Monday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Tuesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Wednesday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Thursday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Friday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Saturday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Sunday</td>
+                                                                <td>0900-1900</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                                <dir class="panel-footer">
+
+                                        <button type="button" class="btn btn-info">
+                                                <a href="http://www.atelierrestaurant.ca/?utm_source=tripadvisor&utm_medium=referral">Website</a>
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#addFavModal">
+                                                Add to Favourites
+                                        </button>
+                                </dir>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addFavModal" role="dialog">
+                <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                                <div class="modal-body">
+                                        <h3>Added to Favourites!</h3>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+
+        <div class="modal fade" id="removeFavModal" role="dialog">
+                <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                                <div class="modal-body">
+                                        <h3>Removed from Favourites!</h3>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+</body>
+
+</html>

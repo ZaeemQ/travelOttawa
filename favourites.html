@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                    <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">Travel Ottawa</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                            <li>
+                                    <a href="index.html">Home</a>
+                            </li>
+                            <li class="active">
+                                    <a href="#">Favourites</a>
+                            </li>
+                            <li>
+                                    <a href="attractions.html">Attractions</a>
+                            </li>
+                            <li>
+                                    <a href="restaurants.html">Restaurants</a>
+                            </li>
+                    </ul>
+            </div>
+    </nav>
+</head>
+
+<body>
+    <div class="jumbotron banner">
+        <div style="text-align: center; width: 30%; background-color: black; color: white;">
+            <h1 style="font-size: 100px">Favourites</h1>
+        </div>
+
+    </div>
+
+    
+    <div style="width: 80%; margin: 10% 10% 50px 10%; padding-bottom: 50px;" class="container">
+        <form class="search" action="Search.html">
+    
+            <div class="col-md-10"><input type="text" placeholder="Search here" name="search"></div>
+            <div class="col-md-2"><button type="submit" id="searchbutton"> Search </button></div> 
+        </form>
+    </div>
+
+
+    <div class="container" style="margin-bottom: 20px; text-align: center">
+            <div class="btn-group dropdown" style="width: 49%">
+                <button class="btn btn-primary dropdown-toggle" style="width:100%" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-expanded="true">
+                    Sort By
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="width: 100%; text-align: center">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">Category</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">Location</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">Type</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="btn-group  dropdown" style="width: 49%">
+                <button class="btn btn-primary  dropdown-toggle" style="width: 100%" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-expanded="true">
+                    Sort
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="width: 100%; text-align: center">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">Ascending</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">Descending</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="printSign">
+            <button type="button" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;" data-toggle="modal" data-target="#emailModal">Email</button>
+            <button type="button" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;" data-toggle="modal" data-target="#printModal">Print</button>
+            <button type="button" class="btn btn-primary" style="width: 100%; margin-bottom: 5px;" data-toggle="modal" data-target="#textModal">Text</button>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row favouriteSlide">
+            <div class="col-md-4">
+                <a href="Info.html">
+                    <img src="img/phill.jpg" width="100%" height="auto" alt="" class="center-block">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Parliament Hill</h2>
+                <h4>Address : 464 Rideau St, Ottawa, ON K1N 5Z3</h4>
+                <h5>Phone: 613 212 2121</h5>
+                <h4>Description:</h4>
+                <p>Lorem ipsum sse nu blanditiis, consequatur iste. Ab incidunt cumque ea facilis explicabo impedit suscipit
+                    error officia illum iste pariatur placeat aut quis iusto est culpa ad hic, obcaecati nobis architect</p>
+
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                    Admission
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Adult 18-64</td>
+                                    <td>$20</td>
+                                </tr>
+                                <tr>
+                                    <td>Children 0-17</td>
+                                    <td>$12</td>
+                                </tr>
+                                <tr>
+                                    <td>Seniors 65+</td>
+                                    <td>$15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+
+            <div class="col-md-2">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            Operating Hours
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-2 center-block">
+                <form action="" class="search">
+                    <button type="button" class="btn btn-danger" style="width: 100%; margin-bottom: 5px;" data-toggle="modal" data-target="#removeFavModal">Add to Favourites</button>
+                    <button type="submit" class="btn btn-info" style="width: 100%;">Website</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row favouriteSlide">
+            <div class="col-md-4">
+                <a href="Info.html">
+                    <img src="img/mnature.jpg" width="100%" height="auto" alt="" class="center-block">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Museum of Nature</h2>
+                <h4>Address : 464 Rideau St, Ottawa, ON K1N 5Z3</h4>
+                <h5>Phone: 613 212 2121</h5>
+                <h4>Description:</h4>
+                <p>Lorem ipsum sse nu blanditiis, consequatur iste. Ab incidunt cumque ea facilis explicabo impedit suscipit
+                    error officia illum iste pariatur placeat aut quis iusto est culpa ad hic, obcaecati nobis architect</p>
+
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                    Admission
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Adult 18-64</td>
+                                    <td>$20</td>
+                                </tr>
+                                <tr>
+                                    <td>Children 0-17</td>
+                                    <td>$12</td>
+                                </tr>
+                                <tr>
+                                    <td>Seniors 65+</td>
+                                    <td>$15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+
+            <div class="col-md-2">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            Operating Hours
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-2 center-block">
+                <form action="" class="search">
+                    <button type="button" class="btn btn-success" style="width: 100%; margin-bottom: 5px;" data-toggle="modal" data-target="#removeFavModal">Remove from Favourites</button>
+                    <button type="submit" class="btn btn-info" style="width: 100%;">Website</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row favouriteSlide">
+            <div class="col-md-4">
+                <a href="Info.html">
+                    <img src="img/signatures.jpg" width="100%" height="200px" alt="" class="center-block">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Signature Restaurant</h2>
+                <h4>Address : 464 Rideau St, Ottawa, ON K1N 5Z3</h4>
+                <h5>Phone: 613 212 2121</h5>
+                <h4>Description:</h4>
+                <p>Lorem ipsum sse nu blanditiis, consequatur iste. Ab incidunt cumque ea facilis explicabo impedit suscipit
+                    error officia illum iste pariatur placeat aut quis iusto est culpa ad hic, obcaecati nobis architect</p>
+                    <h5>Price Range : $$$</h5>
+                            
+            </div>
+
+            <div class="col-md-2">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            Operating Hours
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>0900-1900</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-2 center-block">
+                <form action="" class="search">
+                    <button type="button" class="btn btn-danger" style="width: 100%; margin-bottom: 5px;" data-toggle="modal" data-target="#removeFavModal">Add to Favourites</button>
+                    <button type="submit" class="btn btn-info" style="width: 100%;">Website</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="addFavModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5>Added to Favourites</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+    <div class="modal fade" id="removeFavModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5>Removed from Favourites!</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="emailModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5>Emailed!</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="modal fade" id="textModal" role="dialog">
+                <div class="modal-dialog">
+        
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h5>Texted!</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="modal fade" id="printModal" role="dialog">
+                    <div class="modal-dialog">
+            
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h5>Printing!</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+
+</body>
